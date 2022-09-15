@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        #mpc4ca4238a0b923820dcc509a6f75849b * {
+        #mp6512bd43d9caa6e02c990b0a82652dca {
+            max-width:600px;
+        }
+
+        #mp6512bd43d9caa6e02c990b0a82652dca * {
             box-sizing: border-box;
             font-size: 14px;
             font-family: sans-serif;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__item {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__item {
             width: 100%;
             padding: 8px 0;
             min-height: 42px;
@@ -19,22 +23,22 @@
             justify-content: center;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__item_inline {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__item_inline {
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__item_inline .form__label {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__item_inline .form__label {
             margin: 0 16px 0 0;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__item:last-child {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__item:last-child {
             margin-bottom: 0;
         }
 
         /* кнопка */
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__button {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__button {
             display: block;
             margin: 0 auto;
             cursor: pointer;
@@ -48,8 +52,13 @@
             filter: drop-shadow(0px 10px 15px rgba(13, 110, 253, 0.3)) drop-shadow(0px 5px 5px rgba(13, 110, 253, 0.2)) drop-shadow(0px 2px 2px rgba(13, 110, 253, 0.2));
         }
 
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__button.form__button_disabled {
+            background: #aeaeae;
+            filter: drop-shadow(0px 10px 15px rgba(110, 110, 110, 0.3)) drop-shadow(0px 5px 5px rgba(110, 110, 110, 0.2)) drop-shadow(0px 2px 2px rgba(110, 110, 110, 0.2));
+        }
+
         /* инпут */
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__input {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__input {
             outline: none;
             width: 100%;
             color: #494949;;
@@ -60,11 +69,11 @@
         }
 
         /* выпадающий список и все для него */
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__dropdown {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__dropdown {
             position: relative;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__dropdown__header {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__dropdown__header {
             cursor: pointer;
             display: block;
             position: relative;
@@ -74,9 +83,10 @@
             background: #F7F7F7;
             border: 1px solid #D4D4D4;
             border-radius: 4px;
+            height: 34px;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__dropdown__header::after {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__dropdown__header::after {
             display: block;
             content: '';
             border: 5px solid transparent;
@@ -86,16 +96,16 @@
             right: 14px;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__dropdown__checkbox_hidden:checked ~ .form__dropdown__header::after {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__dropdown__checkbox_hidden:checked ~ .form__dropdown__header::after {
             transform: rotate(180deg) translateY(5px);
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__dropdown__checkbox_hidden {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__dropdown__checkbox_hidden {
             position: absolute;
             visibility: hidden;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__dropdown__content {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__dropdown__content {
             display: none;
             position: absolute;
             width: 100%;
@@ -104,11 +114,11 @@
             border-radius: 4px;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__dropdown__checkbox_hidden:checked ~ .form__dropdown__content {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__dropdown__checkbox_hidden:checked ~ .form__dropdown__content {
             display: block;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__dropdown__option {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__dropdown__option {
             width: 100%;
             color: #494949;
             padding: 8px;
@@ -116,26 +126,26 @@
             cursor: pointer;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__dropdown__option:first-child {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__dropdown__option:first-child {
             border-radius: 4px 4px 0 0;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__dropdown__option:last-child {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__dropdown__option:last-child {
             border-radius: 0 0 4px 4px;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__dropdown__option:hover {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__dropdown__option:hover {
             background: #0D6EFD;
             color: white;
         }
 
         /* Чекбокс и все для него */
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__checkbox_hidden {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__checkbox_hidden {
             position: absolute;
             visibility: hidden;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__checkbox {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__checkbox {
             width: 24px;
             height: 24px;
             display: block;
@@ -143,171 +153,934 @@
             cursor: pointer;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__checkbox__icon {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__checkbox__icon {
             display: block;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__checkbox_hidden:checked ~ .form__checkbox .form__checkbox__icon {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__checkbox_hidden:checked ~ .form__checkbox .form__checkbox__icon {
             display: none;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__checkbox__icon_checked {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__checkbox__icon_checked {
             display: none;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__checkbox_hidden:checked ~ .form__checkbox .form__checkbox__icon_checked {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__checkbox_hidden:checked ~ .form__checkbox .form__checkbox__icon_checked {
             display: block;
         }
 
         /* лейбл */
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__label {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__label {
             margin: 0;
             margin-bottom: 4px;
         }
 
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__label_required::after {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__label_required::after {
             position: relative;
             content: ' *';
             color: red;
         }
 
         /* ошибка */
-        #mpc4ca4238a0b923820dcc509a6f75849b .form__error {
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__error {
             color: red;
             display: none;
             text-align: center;
         }
 
         /* успешный текст */
-        #mpc4ca4238a0b923820dcc509a6f75849b .success {
-            padding: 100px 24px;
+        #mp6512bd43d9caa6e02c990b0a82652dca .success {
+            padding: 20px 24px;
             text-align: center;
             font-size: 32px;
             display: none;
         }
 
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__item.error input {
+            border-color: red;
+        }
+        #mp6512bd43d9caa6e02c990b0a82652dca .form__item .form__error {
+            font-size: 12px;
+            display: none;
+            color: red;
+            text-align: left;
+            margin: 2px 0 0;
+        }
+
+
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 {
+            max-width:600px;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 * {
+            box-sizing: border-box;
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__item {
+            width: 100%;
+            padding: 8px 0;
+            min-height: 42px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__item_inline {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__item_inline .form__label {
+            margin: 0 16px 0 0;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__item:last-child {
+            margin-bottom: 0;
+        }
+
+        /* кнопка */
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__button {
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+            border: none;
+            text-align: center;
+            font-weight: 500;
+            color: white;
+            padding: 11px 16px;
+            background: #0D6EFD;
+            border-radius: 4px;
+            filter: drop-shadow(0px 10px 15px rgba(13, 110, 253, 0.3)) drop-shadow(0px 5px 5px rgba(13, 110, 253, 0.2)) drop-shadow(0px 2px 2px rgba(13, 110, 253, 0.2));
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__button.form__button_disabled {
+            background: #aeaeae;
+            filter: drop-shadow(0px 10px 15px rgba(110, 110, 110, 0.3)) drop-shadow(0px 5px 5px rgba(110, 110, 110, 0.2)) drop-shadow(0px 2px 2px rgba(110, 110, 110, 0.2));
+        }
+
+        /* инпут */
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__input {
+            outline: none;
+            width: 100%;
+            color: #494949;;
+            padding: 8px;
+            background: #F7F7F7;
+            border: 1px solid #D4D4D4;
+            border-radius: 4px;
+        }
+
+        /* выпадающий список и все для него */
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__dropdown {
+            position: relative;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__dropdown__header {
+            cursor: pointer;
+            display: block;
+            position: relative;
+            width: 100%;
+            color: #494949;
+            padding: 8px;
+            background: #F7F7F7;
+            border: 1px solid #D4D4D4;
+            border-radius: 4px;
+            height: 34px;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__dropdown__header::after {
+            display: block;
+            content: '';
+            border: 5px solid transparent;
+            border-top: 5px solid #939393;
+            position: absolute;
+            top: 14px;
+            right: 14px;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__dropdown__checkbox_hidden:checked ~ .form__dropdown__header::after {
+            transform: rotate(180deg) translateY(5px);
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__dropdown__checkbox_hidden {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__dropdown__content {
+            display: none;
+            position: absolute;
+            width: 100%;
+            z-index: 2;
+            border: 1px solid #D4D4D4;
+            border-radius: 4px;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__dropdown__checkbox_hidden:checked ~ .form__dropdown__content {
+            display: block;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__dropdown__option {
+            width: 100%;
+            color: #494949;
+            padding: 8px;
+            background: #F7F7F7;
+            cursor: pointer;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__dropdown__option:first-child {
+            border-radius: 4px 4px 0 0;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__dropdown__option:last-child {
+            border-radius: 0 0 4px 4px;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__dropdown__option:hover {
+            background: #0D6EFD;
+            color: white;
+        }
+
+        /* Чекбокс и все для него */
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__checkbox_hidden {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__checkbox {
+            width: 24px;
+            height: 24px;
+            display: block;
+            position: relative;
+            cursor: pointer;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__checkbox__icon {
+            display: block;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__checkbox_hidden:checked ~ .form__checkbox .form__checkbox__icon {
+            display: none;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__checkbox__icon_checked {
+            display: none;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__checkbox_hidden:checked ~ .form__checkbox .form__checkbox__icon_checked {
+            display: block;
+        }
+
+        /* лейбл */
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__label {
+            margin: 0;
+            margin-bottom: 4px;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__label_required::after {
+            position: relative;
+            content: ' *';
+            color: red;
+        }
+
+        /* ошибка */
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__error {
+            color: red;
+            display: none;
+            text-align: center;
+        }
+
+        /* успешный текст */
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .success {
+            padding: 20px 24px;
+            text-align: center;
+            font-size: 32px;
+            display: none;
+        }
+
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__item.error input {
+            border-color: red;
+        }
+        #mpc20ad4d76fe97759aa27a0c99bff6710 .form__item .form__error {
+            font-size: 12px;
+            display: none;
+            color: red;
+            text-align: left;
+            margin: 2px 0 0;
+        }
+
+
+
     </style>
 </head>
 <body>
-<script>
-  function requiredValidator(value) {
-    return !!value
-  }
-
-  const formType = 'contractor'
-  const contractorType = 'human'
-
-  const formData = {
-    'firstName': {
-      name: 'firstName',
-      value: null,
-      validators: [requiredValidator]
-    },
-    'lastName': {
-      name: 'lastName',
-      value: null,
-      validators: [requiredValidator]
-    },
-  }
-
-  function showError(text) {
-    const error = document.querySelector('#mpc4ca4238a0b923820dcc509a6f75849b.form .form__error')
-    error.style.display = 'block'
-    error.innerHTML = text
-  }
-
-  function hideError() {
-    document.querySelector('#mpc4ca4238a0b923820dcc509a6f75849b.form .form__error').style.display = 'none'
-  }
-
-  function showSuccess(text) {
-    document.querySelector('#mpc4ca4238a0b923820dcc509a6f75849b.form').style.display = 'none'
-    const success = document.querySelector('.success')
-    success.style.display = 'block'
-    success.innerHTML = text
-  }
-
-  function setField(fieldName, value) {
-    hideError()
-    formData[fieldName].value = value
-  }
-
-  function getContentTypeForContractor(contractorType) {
-    if (contractorType === 'human') {
-      return 'ContractorHuman'
-    }
-
-    return 'ContractorCompany'
-  }
-
-  async function send() {
-    const fields = Object.values(formData)
-
-    const isValid = fields.map(
-            item => item.validators.map(
-                    validator => validator(item.value)
-            ).filter(Boolean).length === item.validators.length
-    ).filter(Boolean).length === fields.length
-
-
-    if (isValid) {
-      const request = fields.reduce((dataObj, item) => {
-        if (item.name.startsWith("contractor.")) {
-          if (!dataObj.contractor) {
-            dataObj.contractor = {
-              contentType: getContentTypeForContractor(contractorType)
-            }
-          }
-
-          dataObj.contractor[item.name.replace("contractor.", "")] = item.value
-        } else {
-          dataObj[item.name] = item.value
-        }
-        return dataObj
-      }, {})
-
-      if (formType === 'deal') {
-        request.contentType = 'Deal'
-      } else {
-        request.contentType = getContentTypeForContractor(contractorType)
-      }
-
-      fetch('https://ra.megaplan.ru/api/v3/customLeadForm/1/process/contractor', {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json, text/plain, */*',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(request)
-      }).then(() => showSuccess('Данные успешно отправлены'));
-    } else {
-      showError('Заполните все обязательные поля')
-    }
-  }
-</script>
-<section style="max-width:600px;">
-    <div id="mpc4ca4238a0b923820dcc509a6f75849b" class="form">
-        <div class="form__item">
+<section id="mp6512bd43d9caa6e02c990b0a82652dca" >
+    <div class="form">
+        <div class="form__item item__firstName">
             <p class="form__label form__label_required">Имя</p>
             <input type="text"
                    class="form__input"
-                   placeholder="Имя"
-                   oninput="setField('firstName', this.value)">
+                   placeholder="Имя">
+            <p class="form__error"></p>
         </div>
-        <div class="form__item">
+        <div class="form__item item__lastName">
             <p class="form__label form__label_required">Фамилия</p>
             <input type="text"
                    class="form__input"
-                   placeholder="Фамилия"
-                   oninput="setField('lastName', this.value)">
+                   placeholder="Фамилия">
+            <p class="form__error"></p>
         </div>
-        <div class="form__item" onclick="send()">
+        <div class="form__item">
             <button class="form__button">Отправить</button>
         </div>
         <div class="form__item form__error"></div>
     </div>
-    <div class="success"></div>
+    <div class="success">
+        <p></p>
+        <div class="form__item">
+            <button class="form__button form__restart">Ok</button>
+        </div>
+    </div>
 </section>
+<script>
+  (function () {
+    let isFormLocked = false;
+
+    const formType = 'contractor'
+    const contractorType = 'human'
+    const formId = 'mp6512bd43d9caa6e02c990b0a82652dca'
+
+    const formRootElement = document.querySelector('#' + formId)
+    const submitButton = formRootElement.querySelector('.form .form__button')
+    const restartButton = formRootElement.querySelector('.form__restart')
+    const phoneInputs = formRootElement.querySelectorAll('.form__item [type="tel"]')
+    const successText = formRootElement.querySelector('.success')
+    const formElement = formRootElement.querySelector('.form')
+    const formError = formRootElement.querySelector('.form .form__item.form__error')
+
+    const formData = {
+      'firstName': {
+        name: 'firstName',
+        value: null,
+        validators: [
+          requiredValidator,                                                        ],
+        type: 'input'
+      },
+      'lastName': {
+        name: 'lastName',
+        value: null,
+        validators: [
+          requiredValidator,                                                        ],
+        type: 'input'
+      },
+    }
+
+    initForm()
+
+    function initForm() {
+      phoneInputs.forEach(element => element.addEventListener('input', phoneInputHandler, false))
+      restartButton.addEventListener('click', clearForm)
+      submitButton.onclick = submitHandler
+      initFields();
+    }
+
+    function initFields() {
+      Object.values(formData).map(item => {
+        switch (item.type) {
+          case 'email':
+          case 'phone':
+            const contactElement = formRootElement.querySelector('.form__item.item__' + item.name + ' .form__input')
+            contactElement.oninput = function () {
+              setField(item.name,
+                      {
+                        contentType: 'ContactInfo',
+                        type: item.type,
+                        value: contactElement.value.trim()
+                      }
+              )
+            }
+            break;
+          case 'input':
+            const inputElement = formRootElement.querySelector('.form__item.item__' + item.name + ' .form__input')
+            inputElement.oninput = function () {
+              setField(item.name, inputElement.value)
+            }
+            break;
+          case 'float':
+            const floatElement = formRootElement.querySelector('.form__item.item__' + item.name + ' .form__input')
+            floatElement.oninput = function () {
+              setField(item.name, parseFloat(floatElement.value))
+            }
+            break;
+          case 'dropdown':
+            const dropdownElements = formRootElement.querySelectorAll('.form__item.item__' + item.name + ' .form__dropdown .form__dropdown__option')
+            dropdownElements.forEach(element => {
+              element.addEventListener('click', function () {
+                setField(item.name, this.dataset.value)
+              })
+            })
+            break;
+          case 'checkbox':
+            const checkboxElement = formRootElement.querySelector('.form__item.item__' + item.name + ' .form__checkbox_hidden')
+            checkboxElement.oninput = function () {
+              setField(item.name, checkboxElement.checked)
+            }
+            break;
+
+        }
+      })
+    }
+
+    function clearForm() {
+      successText.style.display = 'none'
+      successText.querySelector('p').innerHTML = ''
+
+      formElement.style.display = 'block'
+
+      Object.keys(formData).forEach(key => formData[key].value = null)
+      formRootElement.querySelectorAll('.form .form__dropdown__header').forEach((header) => header.innerHTML = '')
+      formRootElement.querySelectorAll('.form .form__input').forEach(input => input.value = '')
+
+      unLockButton()
+    }
+
+    function showError(text) {
+      formError.style.display = 'block'
+      formError.innerHTML = text
+      unLockButton()
+    }
+
+    function hideError() {
+      formError.style.display = 'none'
+
+      formRootElement.querySelectorAll('.form .error')
+              .forEach(element => element.classList.remove('error'))
+
+      formRootElement.querySelectorAll('.form .form__error')
+              .forEach(errorField => {
+                errorField.style.display = 'none';
+                errorField.innerHTML = '';
+              })
+    }
+
+    function showSuccess(text) {
+      formElement.style.display = 'none'
+      successText.style.display = 'block'
+      successText.querySelector('p').innerHTML = text
+      unLockButton()
+    }
+
+    function setField(fieldName, value) {
+      hideError()
+      formData[fieldName].value = value
+    }
+
+    function getContentTypeForContractor(contractorType) {
+      return contractorType === 'human' ? 'ContractorHuman': 'ContractorCompany'
+    }
+
+    async function submitHandler() {
+      if (isFormLocked) {
+        return
+      }
+
+      lockButton()
+
+      const fields = Object.values(formData)
+
+      const isValid = fields.map(
+              item => item.validators.map(
+                      validator => {
+                        const validateError = validator(item.value)
+                        if (validateError) {
+                          formRootElement.querySelector('.form .item__' + item.name).classList.add('error')
+                          const errField = formRootElement.querySelector('.form .item__' + item.name + ' .form__error');
+                          errField.innerHTML = validateError
+                          errField.style.display = 'block'
+                        }
+                        return !validateError
+                      }
+              ).filter(Boolean).length === item.validators.length
+      ).filter(Boolean).length === fields.length
+
+
+      const contactInfo = [];
+
+      if (isValid) {
+        const request = fields.reduce((dataObj, item) => {
+          if (['email', 'phone'].includes(item.type)) {
+            if (item.value?.value?.trim()) {
+              contactInfo.push(item.value)
+            }
+            return dataObj
+          }
+
+          if (item.name.startsWith("contractor.")) {
+            if (!dataObj.contractor) {
+              dataObj.contractor = {
+                contentType: getContentTypeForContractor(contractorType)
+              }
+            }
+
+            dataObj.contractor[item.name.replace("contractor.", "")] = item.value
+          } else {
+            dataObj[item.name] = item.value
+          }
+          return dataObj
+        }, {})
+
+        if (formType === 'deal') {
+          request.contentType = 'Deal'
+          if (!!request.contractor) {
+            request.contractor.contactInfo = contactInfo
+          }
+        } else {
+          request.contentType = getContentTypeForContractor(contractorType)
+          request.contactInfo = contactInfo
+        }
+
+        fetch('http://megaplan.local/api/v3/customLeadForm/11/process/contractor', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(request)
+        })
+                .then((response) => {
+                  if (!response.ok) {
+                    throw Error(response.statusText);
+                  }
+
+                  showSuccess('Данные успешно отправлены')
+                })
+                .catch(() => showError('При отправке формы произошла ошибка. Попробуйте позже.'))
+
+      } else {
+        unLockButton()
+      }
+    }
+
+    function lockButton() {
+      isFormLocked = true;
+
+      submitButton.classList.add('form__button_disabled')
+      submitButton.onclick = null
+    }
+
+    function unLockButton() {
+      isFormLocked = false;
+      submitButton.classList.remove('form__button_disabled')
+      submitButton.onclick = submitHandler
+    }
+
+    function phoneInputHandler(e) {
+      e.target.value = e.target.value.replace(/[^\d\()\-\+]/g, '');
+    }
+
+    function requiredValidator(value) {
+      return !value ? 'Поле обязательно для заполнения' : ''
+    }
+
+    function emailValidator(contactInfo) {
+      return contactInfo && contactInfo.value && !contactInfo.value.match(
+              /.+@.+\..+/i
+      ) ? 'Некорректный email' : ''
+    }
+
+    function phoneValidator(contactInfo) {
+      return contactInfo && contactInfo.value && !contactInfo.value.match(
+              /^\+?[\d()\-\s]+$/
+      ) ? 'Некорректный номер телефона' : ''
+    }
+  })();
+</script>
+<hr>
+<section id="mpc20ad4d76fe97759aa27a0c99bff6710" >
+    <div class="form">
+        <div class="form__item item__firstName">
+            <p class="form__label form__label_required">Имя</p>
+            <input type="text"
+                   class="form__input"
+                   placeholder="Имя">
+            <p class="form__error"></p>
+        </div>
+        <div class="form__item item__lastName">
+            <p class="form__label form__label_required">Фамилия</p>
+            <input type="text"
+                   class="form__input"
+                   placeholder="Фамилия">
+            <p class="form__error"></p>
+        </div>
+        <div class="form__item item__Category183CustomFieldEnum">
+            <p class="form__label">
+                енум
+            </p>
+
+            <div class="form__dropdown">
+                <input id="dropdown_mpc20ad4d76fe97759aa27a0c99bff6710_38" type="checkbox" class="form__dropdown__checkbox_hidden">
+                <label for="dropdown_mpc20ad4d76fe97759aa27a0c99bff6710_38" id="dropdown_mpc20ad4d76fe97759aa27a0c99bff6710_38__header" class="form__dropdown__header"></label>
+                <label for="dropdown_mpc20ad4d76fe97759aa27a0c99bff6710_38" class="form__dropdown__content">
+                    <div class="form__dropdown__option" data-value="123"
+                         onclick="document.getElementById('dropdown_mpc20ad4d76fe97759aa27a0c99bff6710_38__header').innerHTML = '123'">
+                        123
+                    </div>
+                    <div class="form__dropdown__option" data-value="432"
+                         onclick="document.getElementById('dropdown_mpc20ad4d76fe97759aa27a0c99bff6710_38__header').innerHTML = '432'">
+                        432
+                    </div>
+                    <div class="form__dropdown__option" data-value="543"
+                         onclick="document.getElementById('dropdown_mpc20ad4d76fe97759aa27a0c99bff6710_38__header').innerHTML = '543'">
+                        543
+                    </div>
+                </label>
+            </div>
+            <p class="form__error"></p>
+        </div>
+        <div class="form__item item__Category183CustomFieldFloat">
+            <p class="form__label">float</p>
+            <input type="number"
+                   class="form__input"
+                   placeholder="float">
+            <p class="form__error"></p>
+        </div>
+        <div class="form__item form__item_inline  item__Category183CustomFieldBool">
+            <p class="form__label">
+                bool
+            </p>
+            <input id="chk_mpc20ad4d76fe97759aa27a0c99bff6710_40" type="checkbox" class="form__checkbox_hidden">
+            <label for="chk_mpc20ad4d76fe97759aa27a0c99bff6710_40" class="form__checkbox">
+                <svg class="form__checkbox__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 5V19H5V5H19ZM19 3H5C4 3 3 4 3 5V19C3 20 4 21 5 21H19C20 21 21 20 21 19V5C21 4 20 3 19 3Z"
+                          fill="#494949"/>
+                </svg>
+                <svg class="form__checkbox__icon_checked" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 3H5C4 3 3 4 3 5V19C3 20 4 21 5 21H19C20 21 21 20 21 19V5C21 4 20 3 19 3ZM10 17L5 12L6.4 10.6L10 14.2L17.6 6.6L19 8L10 17Z"
+                          fill="#08bf32"/>
+                </svg>
+            </label>
+            <p class="form__error"></p>
+        </div>
+        <div class="form__item item__phone">
+            <p class="form__label">Телефон</p>
+            <input type="tel"
+                   class="form__input"
+                   placeholder="Телефон">
+            <p class="form__error"></p>
+        </div>
+        <div class="form__item item__email">
+            <p class="form__label">Email</p>
+            <input type="email"
+                   class="form__input"
+                   placeholder="Email">
+            <p class="form__error"></p>
+        </div>
+        <div class="form__item">
+            <button class="form__button">Отправить</button>
+        </div>
+        <div class="form__item form__error"></div>
+    </div>
+    <div class="success">
+        <p></p>
+        <div class="form__item">
+            <button class="form__button form__restart">Ok</button>
+        </div>
+    </div>
+</section>
+<script>
+  (function () {
+    let isFormLocked = false;
+
+    const formType = 'contractor'
+    const contractorType = 'human'
+    const formId = 'mpc20ad4d76fe97759aa27a0c99bff6710'
+
+    const formRootElement = document.querySelector('#' + formId)
+    const submitButton = formRootElement.querySelector('.form .form__button')
+    const restartButton = formRootElement.querySelector('.form__restart')
+    const phoneInputs = formRootElement.querySelectorAll('.form__item [type="tel"]')
+    const successText = formRootElement.querySelector('.success')
+    const formElement = formRootElement.querySelector('.form')
+    const formError = formRootElement.querySelector('.form .form__item.form__error')
+
+    const formData = {
+      'firstName': {
+        name: 'firstName',
+        value: null,
+        validators: [
+          requiredValidator,                                                        ],
+        type: 'input'
+      },
+      'lastName': {
+        name: 'lastName',
+        value: null,
+        validators: [
+          requiredValidator,                                                        ],
+        type: 'input'
+      },
+      'Category183CustomFieldEnum': {
+        name: 'Category183CustomFieldEnum',
+        value: null,
+        validators: [
+        ],
+        type: 'dropdown'
+      },
+      'Category183CustomFieldFloat': {
+        name: 'Category183CustomFieldFloat',
+        value: null,
+        validators: [
+        ],
+        type: 'float'
+      },
+      'Category183CustomFieldBool': {
+        name: 'Category183CustomFieldBool',
+        value: null,
+        validators: [
+        ],
+        type: 'checkbox'
+      },
+      'phone': {
+        name: 'phone',
+        value: null,
+        validators: [
+          phoneValidator,                ],
+        type: 'phone'
+      },
+      'email': {
+        name: 'email',
+        value: null,
+        validators: [
+          emailValidator,                                    ],
+        type: 'email'
+      },
+    }
+
+    initForm()
+
+    function initForm() {
+      phoneInputs.forEach(element => element.addEventListener('input', phoneInputHandler, false))
+      restartButton.addEventListener('click', clearForm)
+      submitButton.onclick = submitHandler
+      initFields();
+    }
+
+    function initFields() {
+      Object.values(formData).map(item => {
+        switch (item.type) {
+          case 'email':
+          case 'phone':
+            const contactElement = formRootElement.querySelector('.form__item.item__' + item.name + ' .form__input')
+            contactElement.oninput = function () {
+              setField(item.name,
+                      {
+                        contentType: 'ContactInfo',
+                        type: item.type,
+                        value: contactElement.value.trim()
+                      }
+              )
+            }
+            break;
+          case 'input':
+            const inputElement = formRootElement.querySelector('.form__item.item__' + item.name + ' .form__input')
+            inputElement.oninput = function () {
+              setField(item.name, inputElement.value)
+            }
+            break;
+          case 'float':
+            const floatElement = formRootElement.querySelector('.form__item.item__' + item.name + ' .form__input')
+            floatElement.oninput = function () {
+              setField(item.name, parseFloat(floatElement.value))
+            }
+            break;
+          case 'dropdown':
+            const dropdownElements = formRootElement.querySelectorAll('.form__item.item__' + item.name + ' .form__dropdown .form__dropdown__option')
+            dropdownElements.forEach(element => {
+              element.addEventListener('click', function () {
+                setField(item.name, this.dataset.value)
+              })
+            })
+            break;
+          case 'checkbox':
+            const checkboxElement = formRootElement.querySelector('.form__item.item__' + item.name + ' .form__checkbox_hidden')
+            checkboxElement.oninput = function () {
+              setField(item.name, checkboxElement.checked)
+            }
+            break;
+
+        }
+      })
+    }
+
+    function clearForm() {
+      successText.style.display = 'none'
+      successText.querySelector('p').innerHTML = ''
+
+      formElement.style.display = 'block'
+
+      Object.keys(formData).forEach(key => formData[key].value = null)
+      formRootElement.querySelectorAll('.form .form__dropdown__header').forEach((header) => header.innerHTML = '')
+      formRootElement.querySelectorAll('.form .form__input').forEach(input => input.value = '')
+
+      unLockButton()
+    }
+
+    function showError(text) {
+      formError.style.display = 'block'
+      formError.innerHTML = text
+      unLockButton()
+    }
+
+    function hideError() {
+      formError.style.display = 'none'
+
+      formRootElement.querySelectorAll('.form .error')
+              .forEach(element => element.classList.remove('error'))
+
+      formRootElement.querySelectorAll('.form .form__error')
+              .forEach(errorField => {
+                errorField.style.display = 'none';
+                errorField.innerHTML = '';
+              })
+    }
+
+    function showSuccess(text) {
+      formElement.style.display = 'none'
+      successText.style.display = 'block'
+      successText.querySelector('p').innerHTML = text
+      unLockButton()
+    }
+
+    function setField(fieldName, value) {
+      hideError()
+      formData[fieldName].value = value
+    }
+
+    function getContentTypeForContractor(contractorType) {
+      return contractorType === 'human' ? 'ContractorHuman': 'ContractorCompany'
+    }
+
+    async function submitHandler() {
+      if (isFormLocked) {
+        return
+      }
+
+      lockButton()
+
+      const fields = Object.values(formData)
+
+      const isValid = fields.map(
+              item => item.validators.map(
+                      validator => {
+                        const validateError = validator(item.value)
+                        if (validateError) {
+                          formRootElement.querySelector('.form .item__' + item.name).classList.add('error')
+                          const errField = formRootElement.querySelector('.form .item__' + item.name + ' .form__error');
+                          errField.innerHTML = validateError
+                          errField.style.display = 'block'
+                        }
+                        return !validateError
+                      }
+              ).filter(Boolean).length === item.validators.length
+      ).filter(Boolean).length === fields.length
+
+
+      const contactInfo = [];
+
+      if (isValid) {
+        const request = fields.reduce((dataObj, item) => {
+          if (['email', 'phone'].includes(item.type)) {
+            if (item.value?.value?.trim()) {
+              contactInfo.push(item.value)
+            }
+            return dataObj
+          }
+
+          if (item.name.startsWith("contractor.")) {
+            if (!dataObj.contractor) {
+              dataObj.contractor = {
+                contentType: getContentTypeForContractor(contractorType)
+              }
+            }
+
+            dataObj.contractor[item.name.replace("contractor.", "")] = item.value
+          } else {
+            dataObj[item.name] = item.value
+          }
+          return dataObj
+        }, {})
+
+        if (formType === 'deal') {
+          request.contentType = 'Deal'
+          if (!!request.contractor) {
+            request.contractor.contactInfo = contactInfo
+          }
+        } else {
+          request.contentType = getContentTypeForContractor(contractorType)
+          request.contactInfo = contactInfo
+        }
+
+        fetch('http://megaplan.local/api/v3/customLeadForm/12/process/contractor', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(request)
+        })
+                .then((response) => {
+                  if (!response.ok) {
+                    throw Error(response.statusText);
+                  }
+
+                  showSuccess('Данные успешно отправлены')
+                })
+                .catch(() => showError('При отправке формы произошла ошибка. Попробуйте позже.'))
+
+      } else {
+        unLockButton()
+      }
+    }
+
+    function lockButton() {
+      isFormLocked = true;
+
+      submitButton.classList.add('form__button_disabled')
+      submitButton.onclick = null
+    }
+
+    function unLockButton() {
+      isFormLocked = false;
+      submitButton.classList.remove('form__button_disabled')
+      submitButton.onclick = submitHandler
+    }
+
+    function phoneInputHandler(e) {
+      e.target.value = e.target.value.replace(/[^\d\()\-\+]/g, '');
+    }
+
+    function requiredValidator(value) {
+      return !value ? 'Поле обязательно для заполнения' : ''
+    }
+
+    function emailValidator(contactInfo) {
+      return contactInfo && contactInfo.value && !contactInfo.value.match(
+              /.+@.+\..+/i
+      ) ? 'Некорректный email' : ''
+    }
+
+    function phoneValidator(contactInfo) {
+      return contactInfo && contactInfo.value && !contactInfo.value.match(
+              /^\+?[\d()\-\s]+$/
+      ) ? 'Некорректный номер телефона' : ''
+    }
+  })();
+</script>
+
 
 </body>
 </html>
