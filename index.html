@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
 
+    </style>
 </head>
 <body>
 <div class="page">
@@ -41,7 +43,7 @@
     #mpc4ca4238a0b923820dcc509a6f75849b .form__item_styled-content {
         color: #484848;
         line-height: 1.4;
-    }}
+    }
 
     #mpc4ca4238a0b923820dcc509a6f75849b .form__item_styled-content ul,
     #mpc4ca4238a0b923820dcc509a6f75849b .form__item_styled-content ol {
@@ -321,6 +323,30 @@
                    placeholder="Имя">
             <p class="form__error"></p>
         </div>
+        <div class="form__item item__phone">
+            <p class="form__label">Телефон</p>
+            <input type="tel"
+                   class="form__input"
+                   placeholder="Телефон">
+            <p class="form__error"></p>
+        </div>
+        <div class="form__item item__email">
+            <p class="form__label">Email</p>
+            <input type="email"
+                   class="form__input"
+                   placeholder="Email">
+            <p class="form__error"></p>
+        </div>
+        <div class="form__item item__position">
+            <p class="form__label">Должность</p>
+            <input type="text"
+                   class="form__input"
+                   placeholder="Должность">
+            <p class="form__error"></p>
+        </div>
+        <div class="form__item form__item_styled-content">
+            <p>Спасибо что обратились к нам!</p>
+        </div>
         <div class="form__item">
             <div class="form__button_wrap">
                 <button class="form__button">Отправить</button>
@@ -364,6 +390,33 @@
                     value: null,
                     validators: [
                         requiredValidator,                                                                                    ],
+                    type: 'input',
+                    isLogicField:  false ,
+                    logicHandler: function() {},
+                },
+                'phone': {
+                    name: 'phone',
+                    value: null,
+                    validators: [
+                        phoneValidator,                                    ],
+                    type: 'phone',
+                    isLogicField:  false ,
+                    logicHandler: function() {},
+                },
+                'email': {
+                    name: 'email',
+                    value: null,
+                    validators: [
+                        emailValidator,                                                            ],
+                    type: 'email',
+                    isLogicField:  false ,
+                    logicHandler: function() {},
+                },
+                'position': {
+                    name: 'position',
+                    value: null,
+                    validators: [
+                    ],
                     type: 'input',
                     isLogicField:  false ,
                     logicHandler: function() {},
