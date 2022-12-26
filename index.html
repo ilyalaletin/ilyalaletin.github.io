@@ -3,27 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
     <style>
         .form .form__item input.form__input {
+            /* убираем фон у полей ввода*/
             background: none !important;
-            border-top: none !important;
-            border-left: none !important;
-            border-right: none !important;
+
+            /* убираем границы у полей ввода */
+            border: none !important;
+
+            /* добавляем нижнюю границу*/
             border-bottom: 1px solid #860073 !important;
+
+            /* убираем скругление углов у полей*/
             border-radius: 0 !important;
         }
 
+        .form .form__item input.form__input:focus {
+            /* делаем активное поле с более толстым подчеркиванием*/
+            border-bottom: 2px solid #ad058b !important;
+        }
+
         .form .form__item button.form__button {
+            /* меняем цвет кнопки (можно и через настройки формы)*/
             background: #48073f !important;
+
+            /* убираем тень у кнопки*/
             filter: none !important;
-            position: relative;
         }
 
         .form .form__item .form__label {
+            /* убираем описание полей */
             display: none;
         }
 
         .form {
+            /* добавляем фоновую картинку на форму*/
             background-repeat: no-repeat;
             background-image: url(/bg.svg);
             background-position: top right;
@@ -34,7 +49,6 @@
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', ()=> {
-    console.log('phone')
             const prefixNumber = (str) => {
                 if (str === "7") {
                     return "7 (";
@@ -83,14 +97,16 @@
             }
 
             const phoneInputs = document.querySelectorAll('.form .form__item input[type="tel"]')
-            console.log(phoneInputs)
-            phoneInputs.forEach(element => element.addEventListener('input', phoneMaskRus, false))
+            if (phoneInputs) {
+                phoneInputs.forEach(element => element.addEventListener('input', phoneMaskRus, false))
+            }
         })
     </script>
 </head>
 <body>
 <div class="page">
-    <style>#mpc4ca4238a0b923820dcc509a6f75849b {
+    <style>
+        #mpc4ca4238a0b923820dcc509a6f75849b {
         background-color: #FFFFFF;
         width: 100%;
         display: flex;
@@ -897,7 +913,6 @@
             }
         })();
     </script>
-
 </div>
 
 </body>
