@@ -33,8 +33,8 @@
 
     </style>
     <script>
-        document.addEventListener('readystatechange', ()=> {
-
+        document.addEventListener('DOMContentLoaded', ()=> {
+    console.log('phone')
             const prefixNumber = (str) => {
                 if (str === "7") {
                     return "7 (";
@@ -48,7 +48,8 @@
                 return "7 (";
             };
 
-            function phoneMaskRus() {
+            function phoneMaskRus(e) {
+                input = e.target;
                 const value = input.value.replace(/\D+/g, "");
                 const numberLength = 11;
 
@@ -81,8 +82,8 @@
                 input.value = result;
             }
 
-            const phoneInputs = document.querySelectorAll('.form .form__item inpu[type="tel"]')
-
+            const phoneInputs = document.querySelectorAll('.form .form__item input[type="tel"]')
+            console.log(phoneInputs)
             phoneInputs.forEach(element => element.addEventListener('input', phoneMaskRus, false))
         })
     </script>
